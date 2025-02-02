@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Tailwind CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
@@ -12,10 +17,32 @@
         @theme {
           --color-primary: #E55473;
           --color-secondary: #272727;
+          --font-poppins: "Poppins", serif;
+          --font-lato: "Lato", serif;
         }
     </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header class="bg-primary/10 px-4">
+        <!-- Banner Start -->
+        <div class="max-w-[90rem] mx-auto flex flex-col sm:flex-row justify-between items-center gap-12 sm:gap-24 pt-24 sm:pt-48 pb-12 sm:pb-36 sm:bg-[url('images/banner-image.png')] sm:bg-no-repeat sm:bg-contain sm:bg-right">
+            <!-- Banner Content -->
+            <div class="max-w-2xl">
+                <h1 class="text-secondary text-5xl text-left sm:text-7xl font-extrabold">
+                     Let's make beautiful flowers a part of your life.
+                </h1>
+                <p class="text-secondary/60 text-base sm:text-lg py-8">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                </p>
+                <button class="py-5 px-10 text-white bg-primary rounded-lg text-xl font-bold border border-primary cursor-pointer hover:bg-transparent hover:text-primary transition-colors duration-500">Shop Now</button>
+            </div>
+            <!-- Banner Image -->
+            <div>
+                <img class="sm:hidden" src="images/banner-image.png" alt="banner-image">
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
